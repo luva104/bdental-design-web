@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="B-Dental Design provides precise CAD/CAM orthodontic and restorative design services, with STL files ready to print.">
+  <title>B-Dental Design | Digital Dental Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="B-Dental Design home">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span><b>B-Dental</b><small>DESIGN</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#work" data-i18n="navWork">Our work</a>
+      <a href="#process" data-i18n="navProcess">Process</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button" aria-label="Cambiar a español"><span class="active">EN</span><span>ES</span></button>
+      <a class="button button-small" href="https://wa.me/50672000298" target="_blank" rel="noopener" data-i18n="contact">Start a case</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">DIGITAL DENTAL DESIGN · CAD/CAM</p>
+        <h1 data-i18n="heroTitle">From scan to a print-ready design.</h1>
+        <p class="hero-lead" data-i18n="heroLead">Precise orthodontic and restorative digital design for dental labs and clinicians. Send your case and receive STL files prepared for production.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/50672000298" target="_blank" rel="noopener" data-i18n="sendCase">Send a case on WhatsApp</a>
+          <a class="text-link" href="#work"><span data-i18n="seeWork">See recent work</span> <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="trust-list" aria-label="Service highlights">
+          <li><span>01</span><b data-i18n="globalService">Remote service worldwide</b></li>
+          <li><span>02</span><b data-i18n="readyFiles">STL files ready to print</b></li>
+          <li><span>03</span><b data-i18n="bilingual">English & Spanish support</b></li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-label="Digital dental design visualization">
+        <div class="mesh mesh-top"></div>
+        <div class="visual-card">
+          <div class="scan-frame">
+            <svg viewBox="0 0 560 360" role="img" aria-label="Stylized digital dental arch">
+              <defs>
+                <linearGradient id="arch" x1="0" x2="1"><stop stop-color="#effcff"/><stop offset="1" stop-color="#89e4e0"/></linearGradient>
+                <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <path class="gridline" d="M48 286 Q280 54 512 286"/><path class="gridline" d="M86 300 Q280 102 474 300"/>
+              <g fill="none" stroke="url(#arch)" stroke-width="5" filter="url(#glow)" stroke-linecap="round">
+                <path d="M118 246 Q144 120 218 95 Q280 72 342 95 Q416 120 442 246"/>
+                <path d="M138 250 Q167 151 226 130 Q280 110 334 130 Q393 151 422 250" opacity=".72"/>
+              </g>
+              <g fill="#d9fbfa" stroke="#7adbd7" stroke-width="2">
+                <path d="M130 219l35-16 18 39-40 16z"/><path d="M168 174l39-12 13 45-42 11z"/><path d="M213 137l39-5 4 48-42 4z"/><path d="M260 122h40l-1 51h-39z"/><path d="M308 132l39 5-1 47-42-4z"/><path d="M353 162l39 12-10 44-42-11z"/><path d="M397 203l34 16-12 39-40-16z"/>
+              </g>
+              <g class="nodes" fill="#91ffed"><circle cx="118" cy="246" r="4"/><circle cx="218" cy="95" r="4"/><circle cx="280" cy="72" r="4"/><circle cx="342" cy="95" r="4"/><circle cx="442" cy="246" r="4"/></g>
+            </svg>
+            <span class="scan-label label-a">ALIGNER · UPPER</span>
+            <span class="scan-label label-b">READY · STL</span>
+          </div>
+          <div class="visual-footer"><span data-i18n="precision">Precision by design</span><span class="status"><i></i> CAD/CAM</span></div>
+        </div>
+        <div class="mesh mesh-bottom"></div>
+      </div>
+    </section>
+
+    <section class="intro" id="services">
+      <div><p class="section-number">01 · <span data-i18n="servicesLabel">SERVICES</span></p><h2 data-i18n="servicesTitle">Specialized digital support for your workflow.</h2></div>
+      <p class="section-intro" data-i18n="servicesIntro">Built for dental laboratories, orthodontists and clinicians who need reliable design capacity without adding complexity to their operation.</p>
+    </section>
+
+    <section class="service-grid">
+      <article><span class="service-icon">⌁</span><h3 data-i18n="s1Title">Clear aligner design</h3><p data-i18n="s1Text">Digital setups and aligner models developed from your clinical prescription.</p><small>3SHAPE · CAD/CAM</small></article>
+      <article><span class="service-icon">◯</span><h3 data-i18n="s2Title">Splints & retainers</h3><p data-i18n="s2Text">Custom occlusal splints, retainers and acrylic appliances prepared for manufacturing.</p><small>EXOCAD · STL</small></article>
+      <article><span class="service-icon">◇</span><h3 data-i18n="s3Title">Orthodontic appliances</h3><p data-i18n="s3Text">Digital design of appliances according to the orthodontist's specifications.</p><small>ORTHODONTICS</small></article>
+      <article><span class="service-icon">⟋</span><h3 data-i18n="s4Title">Molar band preparation</h3><p data-i18n="s4Text">Precise interproximal preparation to support accurate band placement and fit.</p><small>DIGITAL PREP</small></article>
+      <article><span class="service-icon">✦</span><h3 data-i18n="s5Title">Digital model preparation</h3><p data-i18n="s5Text">Bracket removal, model cleanup and production-ready dental model preparation.</p><small>MODEL EDITING</small></article>
+      <article class="service-cta"><p data-i18n="customNeed">Have a different digital design need?</p><a href="https://wa.me/50672000298" target="_blank" rel="noopener"><span data-i18n="discussCase">Let’s discuss your case</span> →</a></article>
+    </section>
+
+    <section class="work" id="work">
+      <div class="work-heading">
+        <div><p class="section-number">02 · <span data-i18n="workLabel">SELECTED WORK</span></p><h2 data-i18n="workTitle">Real cases. Production-minded design.</h2></div>
+        <p data-i18n="workIntro">A look at recent workflows, directly from B-Dental’s studio.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card"><iframe title="Clear aligner design in 3Shape" src="https://www.instagram.com/reel/DP7LkAejkUb/embed/" loading="lazy" allowfullscreen></iframe><div><b data-i18n="v1">Clear aligner design</b><span>3SHAPE</span></div></article>
+        <article class="video-card"><iframe title="Molar band preparation" src="https://www.instagram.com/reel/DN0xfl83Mg9/embed/" loading="lazy" allowfullscreen></iframe><div><b data-i18n="v2">Molar band preparation</b><span>ORTHODONTICS</span></div></article>
+        <article class="video-card"><iframe title="Digital bracket removal" src="https://www.instagram.com/reel/DMeGqVct11V/embed/" loading="lazy" allowfullscreen></iframe><div><b data-i18n="v3">Digital bracket removal</b><span>MODEL PREP</span></div></article>
+      </div>
+      <div class="social-row">
+        <p data-i18n="moreWork">More designs, workflows and case studies on social media.</p>
+        <div><a href="https://www.instagram.com/bdentaldesignlab/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@fabibonilla42" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="process-title"><p class="section-number">03 · <span data-i18n="processLabel">WORKFLOW</span></p><h2 data-i18n="processTitle">Simple collaboration, clear deliverables.</h2></div>
+      <ol>
+        <li><span>01</span><div><h3 data-i18n="p1Title">Share your case</h3><p data-i18n="p1Text">Send the scan, prescription and requirements through the agreed channel.</p></div></li>
+        <li><span>02</span><div><h3 data-i18n="p2Title">Digital design</h3><p data-i18n="p2Text">Your case is designed with attention to anatomy, fit and production needs.</p></div></li>
+        <li><span>03</span><div><h3 data-i18n="p3Title">Review & delivery</h3><p data-i18n="p3Text">Review the result and receive the final STL files ready for your workflow.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="final-cta">
+      <p class="eyebrow" data-i18n="ctaEyebrow">YOUR DIGITAL DESIGN PARTNER</p>
+      <h2 data-i18n="ctaTitle">Ready to send your next case?</h2>
+      <p data-i18n="ctaText">Tell us what you need and we’ll confirm the requirements for your design.</p>
+      <div class="contact-actions">
+        <a class="button button-light" href="https://wa.me/50672000298" target="_blank" rel="noopener" data-i18n="contactWhatsApp">Contact Fabiola on WhatsApp</a>
+        <a class="email-link" href="mailto:fbm_92@hotmail.com">fbm_92@hotmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">B</span><span><b>B-Dental</b><small>DESIGN</small></span></a>
+    <p><b>Fabiola Bonilla</b><br>Digital Dental Design · CAD/CAM</p>
+    <div class="footer-links"><a href="tel:+50672000298">+506 7200-0298</a><a href="mailto:fbm_92@hotmail.com">fbm_92@hotmail.com</a><a href="https://www.instagram.com/bdentaldesignlab/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@fabibonilla42" target="_blank" rel="noopener">TikTok</a></div>
+  </footer>
+</body>
+</html>
