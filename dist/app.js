@@ -18,8 +18,17 @@ const copy = {
     partner2Title:"Overflow capacity", partner2Text:"Add external design capacity when case volume increases without changing your internal production structure.",
     partner3Title:"Start with a test case", partner3Text:"Evaluate the workflow, communication and design fit with a real case before deciding on a longer-term collaboration.",
     partner4Title:"Confidential workflow", partner4Text:"Case information and files are treated as confidential production material and handled only for the requested design work.",
-    processLabel:"WORKFLOW", processTitle:"Clear communication. Reliable delivery.", processIntro:"A straightforward remote workflow designed to integrate with your lab and keep cases moving without unnecessary complexity.", p1Title:"Send the case", p1Text:"Share the scan, prescription and case requirements through the agreed channel.", p2Title:"Digital design", p2Text:"The case is designed around your instructions, anatomy, fit, function and manufacturing requirements.", p3Title:"Review & delivery", p3Text:"Review the design and receive the final files prepared for your production workflow.",
-    aboutLabel:"ABOUT B-DENTAL", aboutTitle:"Experienced dental CAD support with direct, personal communication.", aboutText:"B-Dental Design is led by Fabiola Bonilla, a dental CAD/CAM professional with more than 12 years of experience. The service is intentionally personal: laboratories communicate directly with the designer handling their cases, making it easier to maintain preferences, consistency and a practical production workflow.", remoteService:"Remote service for U.S. and international dental labs",
+    processLabel:"WORKFLOW", processTitle:"Clear communication. Reliable delivery.", processIntro:"A straightforward remote workflow designed to integrate with your lab and keep cases moving without unnecessary complexity.",
+    p1Title:"Send the case", p1Text:"Share the scan, prescription and case requirements through the agreed channel.", p2Title:"Digital design", p2Text:"The case is designed around your instructions, anatomy, fit, function and manufacturing requirements.", p3Title:"Review & delivery", p3Text:"Review the design and receive the final files prepared for your production workflow.",
+    aboutLabel:"ABOUT THE DESIGNER", aboutTitle:"Dental design backed by more than 12 years of digital experience.",
+    aboutP1:"I’m Fabiola Bonilla Masís, a Certified Dental Technician and Dental CAD Designer specialized in digital dental design, with more than 12 years of experience working with CAD/CAM technology and digital workflows for the dental industry.",
+    aboutP2:"Throughout my career I have developed experience in different areas of dental design, including clear aligners, restorative design, full dentures, dental models and digital case detailing.",
+    aboutP3:"I have had the opportunity to work with recognized dental companies and laboratories, including projects for companies in the United States, developing cases remotely and collaborating directly with doctors, technicians and laboratories to transform prescriptions and digital scans into precise, functional, production-ready designs.",
+    aboutP4:"My experience includes specialized platforms and tools such as Exocad, 3Shape, SoftSmile, ArchForm, Meshmixer, Medit and Sirona, allowing me to adapt to different workflows and client requirements.",
+    focusLabel:"MY APPROACH", focusTitle:"Precision, attention to detail and a workflow built around your case.",
+    focusP1:"At B-Dental Design I combine dental-digital experience, precision and attention to detail to provide a reliable and efficient design service.",
+    focusP2:"Every case is carefully reviewed according to the doctor’s and laboratory’s instructions, aiming not only to meet technical requirements but also to simplify production and contribute to a high-quality result.",
+    focusP3:"My goal is to help you optimize your digital workflow, save time and turn your digital cases into precise designs that are ready to work with.",
     ctaEyebrow:"START WITH A REAL CASE", ctaTitle:"Need extra CAD capacity for your lab?", ctaText:"Send a case and its requirements. We can start with a test case so you can evaluate the workflow before moving forward.", contactWhatsApp:"Send a Test Case on WhatsApp"
   },
   es: {
@@ -41,52 +50,24 @@ const copy = {
     partner2Title:"Capacidad adicional", partner2Text:"Agregue capacidad externa de diseño cuando aumenta el volumen de casos sin modificar la estructura interna de producción.",
     partner3Title:"Comience con un caso de prueba", partner3Text:"Evalúe el flujo, la comunicación y la compatibilidad del diseño con un caso real antes de decidir una colaboración de mayor plazo.",
     partner4Title:"Flujo confidencial", partner4Text:"La información y los archivos de cada caso se tratan como material de producción confidencial y se utilizan únicamente para realizar el trabajo solicitado.",
-    processLabel:"PROCESO", processTitle:"Comunicación clara. Entrega confiable.", processIntro:"Un flujo remoto sencillo, diseñado para integrarse con su laboratorio y mantener los casos avanzando sin complejidad innecesaria.", p1Title:"Enviar el caso", p1Text:"Comparta el escaneo, la prescripción y los requisitos del caso por el canal acordado.", p2Title:"Diseño digital", p2Text:"El caso se diseña según sus instrucciones, cuidando anatomía, ajuste, función y requisitos de fabricación.", p3Title:"Revisión y entrega", p3Text:"Revise el diseño y reciba los archivos finales preparados para su flujo de producción.",
-    aboutLabel:"ACERCA DE B-DENTAL", aboutTitle:"Soporte CAD dental con experiencia y comunicación directa y personal.", aboutText:"B-Dental Design es dirigido por Fabiola Bonilla, profesional de CAD/CAM dental con más de 12 años de experiencia. El servicio es deliberadamente personal: los laboratorios se comunican directamente con la diseñadora que trabaja sus casos, facilitando mantener preferencias, consistencia y un flujo práctico de producción.", remoteService:"Servicio remoto para laboratorios dentales de EE. UU. e internacionales",
+    processLabel:"PROCESO", processTitle:"Comunicación clara. Entrega confiable.", processIntro:"Un flujo remoto sencillo, diseñado para integrarse con su laboratorio y mantener los casos avanzando sin complejidad innecesaria.",
+    p1Title:"Enviar el caso", p1Text:"Comparta el escaneo, la prescripción y los requisitos del caso por el canal acordado.", p2Title:"Diseño digital", p2Text:"El caso se diseña según sus instrucciones, cuidando anatomía, ajuste, función y requisitos de fabricación.", p3Title:"Revisión y entrega", p3Text:"Revise el diseño y reciba los archivos finales preparados para su flujo de producción.",
+    aboutLabel:"SOBRE LA DISEÑADORA", aboutTitle:"Diseño dental respaldado por más de 12 años de experiencia digital.",
+    aboutP1:"Soy Fabiola Bonilla Masís, Técnica Dental Certificada y Dental CAD Designer especializada en diseño dental digital, con más de 12 años de experiencia trabajando con tecnología CAD/CAM y flujos digitales para la industria odontológica.",
+    aboutP2:"A lo largo de mi trayectoria he desarrollado experiencia en diferentes áreas del diseño dental, incluyendo alineadores transparentes, diseño restaurativo, prótesis completas, modelos dentales y detallado digital de casos.",
+    aboutP3:"He tenido la oportunidad de trabajar con reconocidas empresas y laboratorios dentales, incluyendo proyectos para compañías de Estados Unidos, desarrollando casos de manera remota y colaborando directamente con doctores, técnicos y laboratorios para transformar sus prescripciones y escaneos digitales en diseños precisos, funcionales y listos para producción.",
+    aboutP4:"Mi experiencia incluye el manejo de diferentes plataformas y herramientas especializadas como Exocad, 3Shape, SoftSmile, ArchForm, Meshmixer, Medit y Sirona, lo que me permite adaptarme a diferentes flujos de trabajo y necesidades de cada cliente.",
+    focusLabel:"MI ENFOQUE", focusTitle:"Precisión, atención al detalle y un flujo pensado alrededor de cada caso.",
+    focusP1:"En B-Dental Design combino experiencia dental-digital, precisión y atención al detalle para ofrecer un servicio de diseño confiable y eficiente.",
+    focusP2:"Cada caso es revisado cuidadosamente tomando en cuenta las indicaciones del doctor y del laboratorio, buscando que el resultado final no solo cumpla con los requerimientos técnicos, sino que facilite el proceso de producción y contribuya a obtener un resultado de alta calidad.",
+    focusP3:"Mi objetivo es ayudarte a optimizar tu flujo digital, ahorrar tiempo y convertir tus casos digitales en diseños precisos y listos para trabajar.",
     ctaEyebrow:"COMIENCE CON UN CASO REAL", ctaTitle:"¿Necesita capacidad CAD adicional para su laboratorio?", ctaText:"Envíe un caso y sus requisitos. Podemos comenzar con un caso de prueba para que evalúe el flujo antes de continuar.", contactWhatsApp:"Enviar caso de prueba por WhatsApp"
   }
 };
 
-const partnerSection = document.createElement("section");
-partnerSection.className = "lab-partner";
-partnerSection.innerHTML = `
-  <div class="shell">
-    <div class="partner-heading reveal">
-      <div>
-        <p class="section-kicker" data-i18n="partnerLabel">FOR DENTAL LABS</p>
-        <h2 data-i18n="partnerTitle">A flexible CAD partner when your team needs more capacity.</h2>
-      </div>
-      <p data-i18n="partnerIntro">Built for laboratories that want an experienced designer they can communicate with directly — whether for ongoing support, overflow work or a first test case.</p>
-    </div>
-    <div class="partner-grid">
-      <article class="partner-card reveal"><span>01</span><h3 data-i18n="partner1Title">Dedicated CAD support</h3><p data-i18n="partner1Text">Work directly with one designer who learns your preferences, production requirements and case expectations.</p></article>
-      <article class="partner-card reveal"><span>02</span><h3 data-i18n="partner2Title">Overflow capacity</h3><p data-i18n="partner2Text">Add external design capacity when case volume increases without changing your internal production structure.</p></article>
-      <article class="partner-card reveal"><span>03</span><h3 data-i18n="partner3Title">Start with a test case</h3><p data-i18n="partner3Text">Evaluate the workflow, communication and design fit with a real case before deciding on a longer-term collaboration.</p></article>
-      <article class="partner-card reveal"><span>04</span><h3 data-i18n="partner4Title">Confidential workflow</h3><p data-i18n="partner4Text">Case information and files are treated as confidential production material and handled only for the requested design work.</p></article>
-    </div>
-  </div>`;
-
-const workSection = document.querySelector(".work");
-if (workSection) workSection.insertAdjacentElement("afterend", partnerSection);
-
-const extraStyles = document.createElement("style");
-extraStyles.textContent = `
-.lab-partner{padding-block:110px;background:var(--cream-2);border-bottom:1px solid var(--line)}
-.partner-heading{display:grid;grid-template-columns:1.05fr .75fr;gap:90px;align-items:end;margin-bottom:55px}
-.partner-heading h2{font-family:"Playfair Display",serif;font-weight:500;letter-spacing:-.035em;line-height:1.02;margin:0;font-size:clamp(42px,4.6vw,64px)}
-.partner-heading>p{color:var(--muted);font-size:17px;margin:0;max-width:520px}
-.partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.partner-card{padding:32px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white);min-height:240px}
-.partner-card>span{font-family:"Playfair Display",serif;color:var(--taupe);font-size:22px}
-.partner-card h3{font-family:"Playfair Display",serif;font-size:28px;font-weight:500;margin:38px 0 10px}
-.partner-card p{margin:0;color:var(--muted)}
-@media(max-width:1050px){.partner-heading{grid-template-columns:1fr;gap:28px}.partner-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.lab-partner{padding-block:80px}.partner-grid{grid-template-columns:1fr}.partner-card{min-height:auto}.partner-heading h2{font-size:42px}}
-`;
-document.head.appendChild(extraStyles);
-
 let lang = "en";
 const toggle = document.querySelector(".lang-toggle");
+
 function render(){
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -97,10 +78,17 @@ function render(){
   toggle.setAttribute("aria-label",lang==="en"?"Cambiar a español":"Switch to English");
   document.title = lang==="en" ? "B-Dental Design | CAD Design Support for Dental Labs" : "B-Dental Design | Soporte CAD para Laboratorios Dentales";
 }
+
 toggle.addEventListener("click",()=>{lang=lang==="en"?"es":"en";render()});
 
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add("visible"); observer.unobserve(entry.target); } });
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
 },{threshold:.12});
+
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 render();
