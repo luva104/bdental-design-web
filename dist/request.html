@@ -2,56 +2,52 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f3ede4"><meta name="description" content="B-Dental Design dental design order form.">
+<meta name="theme-color" content="#f3ede4"><meta name="description" content="B-Dental Design professional dental design request form for dental laboratories and clinics.">
 <title>B-Dental Design | Design Request</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./request.css"><script defer src="./request.js"></script>
 </head>
 <body>
-<header class="order-header"><a class="brand" href="./index.html"><span class="logo">BD</span><span><b>B-Dental Design</b><small>Digital Dental Design · CAD/CAM</small></span></a><div class="header-actions"><button class="lang-toggle" type="button"><span class="active">EN</span><span>ES</span></button><a class="back-link" href="./index.html" data-i18n="back">Back to website</a></div></header>
+<header class="order-header"><a class="brand" href="./index.html"><span class="logo">BD</span><span><b>B-Dental Design</b><small>Digital Dental Design · CAD/CAM</small></span></a><div class="header-actions"><a class="back-link" href="./index.html">Back to website</a></div></header>
 <main class="shell">
-<section class="order-hero"><p class="eyebrow" data-i18n="eyebrow">DENTAL DESIGN ORDER FORM</p><h1 data-i18n="title">Send a complete case in a few guided steps.</h1><p data-i18n="intro">Provide the information needed to review your case before design begins. Fields adapt to the type of work you select.</p></section>
-<div class="privacy-note"><b data-i18n="privacyTitle">Patient privacy</b><span data-i18n="privacyText">Use a case number or anonymous identifier. Do not enter the patient's full name or other personally identifiable information.</span></div>
+<section class="order-hero"><p class="eyebrow">B-DENTAL DESIGN — DESIGN REQUEST</p><h1>Send a complete case in a few guided steps.</h1><p>Provide the information needed to review your case before design begins. The form adapts to the type of work you select.</p></section>
+<div class="privacy-note"><b>Patient privacy</b><span>Use a case number or anonymous identifier. Do not enter the patient's full name or other personally identifiable information.</span></div>
 <nav class="progress" aria-label="Form progress">
-<button class="step-dot active" data-go="0"><span>1</span><small data-i18n="step1">Client</small></button><i></i>
-<button class="step-dot" data-go="1"><span>2</span><small data-i18n="step2">Case type</small></button><i></i>
-<button class="step-dot" data-go="2"><span>3</span><small data-i18n="step3">Details</small></button><i></i>
-<button class="step-dot" data-go="3"><span>4</span><small data-i18n="step4">Files</small></button><i></i>
-<button class="step-dot" data-go="4"><span>5</span><small data-i18n="step5">Deadline</small></button><i></i>
-<button class="step-dot" data-go="5"><span>6</span><small data-i18n="step6">Review</small></button>
+<button class="step-dot active" data-go="0"><span>1</span><small>Client</small></button><i></i><button class="step-dot" data-go="1"><span>2</span><small>Case</small></button><i></i><button class="step-dot" data-go="2"><span>3</span><small>Specs</small></button><i></i><button class="step-dot" data-go="3"><span>4</span><small>Files</small></button><i></i><button class="step-dot" data-go="4"><span>5</span><small>Deadline</small></button><i></i><button class="step-dot" data-go="5"><span>6</span><small>Review</small></button>
 </nav>
 <form id="orderForm" novalidate>
-<section class="panel step active" data-step="0"><div class="panel-heading"><span>01</span><div><h2 data-i18n="clientTitle">Client information</h2><p data-i18n="clientSub">Who is sending this case?</p></div></div><div class="grid two">
-<label><span data-i18n="doctor">Doctor / Dentist *</span><input name="doctor" required autocomplete="name"></label>
-<label><span data-i18n="clinic">Clinic or laboratory *</span><input name="clinic" required autocomplete="organization"></label>
-<label><span data-i18n="email">Email *</span><input name="email" type="email" required autocomplete="email"></label>
-<label><span data-i18n="phone">WhatsApp / Phone *</span><input name="phone" required autocomplete="tel"></label>
-<label><span data-i18n="country">Country *</span><input name="country" required autocomplete="country-name"></label>
-<label><span data-i18n="caseId">Case / patient ID *</span><input name="caseId" required placeholder="e.g. LAB-2048"></label>
+<section class="panel step active" data-step="0"><div class="panel-heading"><span>01</span><div><h2>Client Information</h2><p>Who is sending this case?</p></div></div><div class="grid two">
+<label><span>Doctor / Designer Name *</span><input name="doctor" required autocomplete="name" placeholder="Enter your full name"></label>
+<label><span>Dental Clinic / Laboratory *</span><input name="clinic" required autocomplete="organization" placeholder="Clinic or laboratory name"></label>
+<label><span>Email Address *</span><input name="email" type="email" required autocomplete="email" placeholder="name@example.com"></label>
+<label><span>Phone / WhatsApp</span><input name="phone" autocomplete="tel" placeholder="+1..."></label>
+<label><span>Country *</span><input name="country" required autocomplete="country-name" placeholder="Country"></label>
+<label><span>Your Case / Patient ID *</span><input name="clientCaseId" required placeholder="Enter your case number or anonymous patient ID"></label>
+</div><div class="generated-id"><span>B-Dental Case ID</span><strong id="generatedCaseId"></strong><small>This ID is generated automatically and will be included in your request.</small></div></section>
+<section class="panel step" data-step="1"><div class="panel-heading"><span>02</span><div><h2>Case Information</h2><p>Select the design and identify the restoration area.</p></div></div><h3 class="field-heading">What type of design do you need? *</h3><div class="choice-grid" id="caseTypes"></div><p class="error-inline" id="typeError"></p><div class="grid two case-basics">
+<label><span>Arch *</span><select name="arch" required><option value="">Select arch</option><option>Maxillary</option><option>Mandibular</option><option>Both</option></select></label>
+<label><span>Tooth Number(s) *</span><input name="teeth" required placeholder="e.g. #8, #9, #19"></label>
+<label class="wide"><span>Restoration Type</span><input name="restoration" placeholder="Select or describe restoration type"></label>
 </div></section>
-<section class="panel step" data-step="1"><div class="panel-heading"><span>02</span><div><h2 data-i18n="typeTitle">Case type</h2><p data-i18n="typeSub">Select one or more services.</p></div></div><div class="choice-grid" id="caseTypes"></div><p class="error-inline" id="typeError"></p></section>
-<section class="panel step" data-step="2"><div class="panel-heading"><span>03</span><div><h2 data-i18n="detailsTitle">Case details</h2><p data-i18n="detailsSub">Technical information for design and production.</p></div></div><div class="grid two">
-<label><span data-i18n="arch">Arch</span><select name="arch"><option value=""></option><option>Maxillary</option><option>Mandibular</option><option>Both</option></select></label>
-<label><span data-i18n="teeth">Teeth numbers</span><input name="teeth" placeholder="e.g. 11, 12, 21"></label>
-<label><span data-i18n="restoration">Restoration type</span><input name="restoration"></label><label><span data-i18n="material">Material</span><input name="material"></label>
-<label><span data-i18n="shade">Shade</span><input name="shade"></label><label><span data-i18n="pontic">Pontic design</span><input name="pontic"></label>
-<label class="wide"><span data-i18n="occlusion">Occlusal considerations</span><textarea name="occlusion" rows="3"></textarea></label>
-<label class="wide"><span data-i18n="margins">Margins / preparation information</span><textarea name="margins" rows="3"></textarea></label>
-</div><div id="conditionalFields"></div></section>
-<section class="panel step" data-step="3"><div class="panel-heading"><span>04</span><div><h2 data-i18n="filesTitle">Case files</h2><p data-i18n="filesSub">Select the files associated with this case.</p></div></div>
-<label class="drop-zone"><input id="caseFiles" type="file" multiple accept=".stl,.ply,.obj,.jpg,.jpeg,.png,.pdf,.dcm"><b data-i18n="chooseFiles">Choose case files</b><span>STL · PLY · OBJ · JPG · PNG · PDF · DICOM</span></label><div id="fileList" class="file-list"></div>
-<div class="file-warning"><b data-i18n="filePrivacyTitle">Files are not uploaded by this website.</b><span data-i18n="filePrivacy">For privacy and reliability, selected files remain on your device. After submitting the request, attach them in the WhatsApp conversation or agreed secure delivery channel.</span></div></section>
-<section class="panel step" data-step="4"><div class="panel-heading"><span>05</span><div><h2 data-i18n="deadlineTitle">Deadline & instructions</h2><p data-i18n="deadlineSub">Tell us when you need the case and anything else we should know.</p></div></div><div class="grid two">
-<label><span data-i18n="priority">Priority *</span><select name="priority" required><option value=""></option><option value="Standard">Standard</option><option value="Rush">Rush</option><option value="Specific deadline">Specific deadline</option></select></label>
-<label><span data-i18n="date">Required date</span><input name="deadline" type="date"></label>
-<label class="wide"><span data-i18n="special">Special instructions</span><textarea name="instructions" rows="7" data-i18n-placeholder="specialPlaceholder" placeholder="Contact preferences, occlusion, emergence profile, anatomy, esthetic preferences, references..."></textarea></label>
+<section class="panel step" data-step="2"><div class="panel-heading"><span>03</span><div><h2>Design Specifications</h2><p>Fields below adapt to the type of case selected.</p></div></div><div id="conditionalFields"></div><div class="grid two base-specs">
+<label><span>Material</span><input name="material"></label><label><span>Shade</span><input name="shade" placeholder="e.g. A2"></label>
+<label><span>Pontic Design</span><input name="pontic"></label><label><span>Margin Preferences</span><input name="margins"></label>
+<label class="wide"><span>Occlusal Considerations</span><textarea name="occlusion" rows="3" placeholder="Contacts, clearance, opposing dentition, functional requirements..."></textarea></label>
 </div></section>
-<section class="panel step" data-step="5"><div class="panel-heading"><span>06</span><div><h2 data-i18n="reviewTitle">Review & submit</h2><p data-i18n="reviewSub">Check the request before opening WhatsApp.</p></div></div><div id="reviewBox" class="review-box"></div>
-<label class="confirm"><input name="confirm" type="checkbox" required><span data-i18n="confirm">I have reviewed the information provided and confirm that the files and prescription correspond to this case.</span></label>
-<div class="submit-note" data-i18n="submitNote">Submitting opens WhatsApp with a structured case summary. Attach the selected case files there before sending.</div>
-</section>
-<div class="form-actions"><button type="button" class="secondary" id="prevBtn" data-i18n="previous">Previous</button><button type="button" class="primary" id="nextBtn" data-i18n="next">Continue</button><button type="submit" class="primary submit" id="submitBtn" data-i18n="submit">Submit Design Request</button></div>
+<section class="panel step" data-step="3"><div class="panel-heading"><span>04</span><div><h2>Files</h2><p>Select all files necessary to complete your design.</p></div></div><div class="file-guidance"><div><b>Required</b><span>Intraoral scan</span><span>Prescription / instructions</span></div><div><b>Optional</b><span>Patient photographs</span><span>CBCT</span><span>Reference STL / wax-up</span><span>Previous design / other references</span></div></div>
+<label class="drop-zone"><input id="caseFiles" type="file" multiple accept=".stl,.ply,.obj,.dcm,.jpg,.jpeg,.png,.pdf,.zip"><b>Upload Your Case Files</b><span>Drag & drop files here or click to browse</span><small>STL · PLY · OBJ · DCM · JPG · PNG · PDF · ZIP</small></label><div id="fileList" class="file-list"></div>
+<div class="privacy-note file-note"><b>Important</b><span>Please make sure all files are clearly identified with the corresponding case number.</span></div>
+<div class="file-warning"><b>Files are not uploaded by this website yet.</b><span>Selected files remain on your device. After submitting, attach them in the WhatsApp conversation or the secure delivery channel agreed with B-Dental Design.</span></div></section>
+<section class="panel step" data-step="4"><div class="panel-heading"><span>05</span><div><h2>Instructions & Deadline</h2><p>Tell us exactly what you need and when you need it.</p></div></div><div class="grid two">
+<label class="wide"><span>Design Instructions *</span><textarea name="instructions" rows="7" required placeholder="Occlusion, contacts, anatomy, emergence profile, pontic design, margin preferences, esthetic considerations, references..."></textarea></label>
+<label><span>Requested Completion Date *</span><input name="deadline" type="date" required></label>
+<label><span>Priority *</span><select name="priority" required><option value="">Select priority</option><option>Standard</option><option>Rush</option></select></label>
+</div></section>
+<section class="panel step" data-step="5"><div class="panel-heading"><span>06</span><div><h2>Review & Submit</h2><p>Check the case summary before opening WhatsApp.</p></div></div><div class="case-id-banner"><span>CASE ID</span><strong id="reviewCaseId"></strong></div><div id="reviewBox" class="review-box"></div>
+<label class="confirm"><input name="confirm" type="checkbox" required><span>I confirm that all information provided is correct and that the selected files correspond to this case.</span></label>
+<div class="submit-note">Submitting opens WhatsApp with a structured case summary. Attach the selected case files there before sending.</div></section>
+<div class="form-actions"><button type="button" class="secondary" id="prevBtn">Previous</button><button type="button" class="primary" id="nextBtn">Continue</button><button type="submit" class="primary submit" id="submitBtn">Submit Design Request</button></div>
 </form>
 </main>
 <footer><span>B-Dental Design · Fabiola Bonilla</span><span>+506 7200 0298 · b.dentaldesignlab@gmail.com</span></footer>
