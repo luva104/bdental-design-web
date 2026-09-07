@@ -129,7 +129,10 @@ form.addEventListener('submit',e=>{
     `Priority: ${val('priority')}`,
     `Instructions: ${val('instructions')}`,
     '',
-    `Selected files to attach: ${files}`,
+    `Files selected in the form: ${files}`,
+    '',
+    'IMPORTANT: Please attach the case files in this WhatsApp chat before sending the request (STL / PLY / OBJ / DCM / photos / prescription / PDF / ZIP, as applicable).',
+    'Please make sure every file is clearly identified with the corresponding Case ID.',
     '',
     'Please confirm receipt of this design request.'
   ].filter(Boolean).join('\n');
